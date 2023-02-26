@@ -1,0 +1,12 @@
+<app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+
+<mat-drawer-container>
+    <mat-drawer mode="over" [opened]="sideBarOpen">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <ng-content></ng-content>
+    </mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer fxHide  fxShow.sm fxShow.xs></app-footer>

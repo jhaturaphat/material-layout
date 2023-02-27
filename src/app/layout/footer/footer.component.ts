@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
+
+  toggleSideBar() {
+    this.toggleSideBarForMe.emit();
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event('resize')
+      );
+    }, 300);
+  }
+  
 }

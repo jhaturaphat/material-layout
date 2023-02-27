@@ -9,6 +9,4 @@
     </mat-drawer-content>
 </mat-drawer-container>
 
-<app-footer fxHide  fxShow.sm fxShow.xs>
-    <app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
-</app-footer>
+<app-footer (toggleSideBarForMe)="sideBarToggler($event)" fxHide fxShow.sm fxShow.xs></app-footer>

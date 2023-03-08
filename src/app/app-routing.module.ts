@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DatePickerDemoComponent } from './components/date-picker-demo/date-picker-demo.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { LayoutDefaultComponent } from './layout/layout-default/layout-default.component';
+
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'dashboard',
     component:DashboardComponent
+  },
+  {
+    path:'datepicker',
+    component:DatePickerDemoComponent
   }
 ];
 

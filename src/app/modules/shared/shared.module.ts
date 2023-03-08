@@ -4,6 +4,8 @@ import { CardComponent } from '../../shared/widgets/card/card.component';
 import { AreaComponent } from '../../shared/widgets/area/area.component';
 import { PieComponent } from '../../shared/widgets/pie/pie.component';
 import { MaterialModule } from '../material/material.module';
+import { DatePickerDemoComponent } from 'src/app/components/date-picker-demo/date-picker-demo.component';
+
 
 
 
@@ -11,7 +13,7 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     CardComponent,
     AreaComponent,
-    PieComponent
+    PieComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,7 @@ import { MaterialModule } from '../material/material.module';
   exports:[
     CardComponent,
     AreaComponent,
-    PieComponent
+    PieComponent,
   ]
 })
 export class SharedModule { }
